@@ -1,0 +1,8 @@
+CREATE SCHEMA Blog;
+
+CREATE TABLE Blog.Posts(
+    Id SERIAL PRIMARY KEY,
+    Title TEXT NOT NULL,
+    Content TEXT NOT NULL,
+    Date TIMESTAMP DEFAULT NOW()
+);
